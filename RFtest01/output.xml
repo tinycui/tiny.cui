@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160816 18:49:41.295" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/cuiyixiu/Documents/RFtest01/RFtest01" id="s1" name="RFtest01">
+<suite source="/Users/cuiyixiu/Documents/RFtest01/RFtest01/SearchingForEleme.robot" id="s1-s1" name="SearchingForEleme">
+<test id="s1-s1-t1" name="RFtest01">
+<kw name="Open Browser To Searche For Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Search URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160816 18:49:41.395" level="INFO">Opening browser 'Firefox' to base url 'http://www.baidu.com'</msg>
+<status status="PASS" endtime="20160816 18:49:45.510" starttime="20160816 18:49:41.394"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160816 18:49:46.026" starttime="20160816 18:49:45.510"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160816 18:49:46.027" starttime="20160816 18:49:46.026"></status>
+</kw>
+<status status="PASS" endtime="20160816 18:49:46.027" starttime="20160816 18:49:41.394"></status>
+</kw>
+<kw name="Input Keywords">
+<arguments>
+<arg>饿了么</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=kw</arg>
+<arg>${searchword}</arg>
+</arguments>
+<msg timestamp="20160816 18:49:46.029" level="INFO">Typing text '饿了么' into text field 'id=kw'</msg>
+<status status="PASS" endtime="20160816 18:49:46.186" starttime="20160816 18:49:46.028"></status>
+</kw>
+<status status="PASS" endtime="20160816 18:49:46.186" starttime="20160816 18:49:46.028"></status>
+</kw>
+<kw name="Submit Keywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=su</arg>
+</arguments>
+<msg timestamp="20160816 18:49:46.187" level="INFO">Clicking button 'id=su'.</msg>
+<status status="PASS" endtime="20160816 18:49:47.604" starttime="20160816 18:49:46.187"></status>
+</kw>
+<status status="PASS" endtime="20160816 18:49:47.604" starttime="20160816 18:49:46.187"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>饿了么网上订餐</arg>
+</arguments>
+<status status="PASS" endtime="20160816 18:49:48.076" starttime="20160816 18:49:47.604"></status>
+</kw>
+<status status="PASS" endtime="20160816 18:49:48.077" critical="yes" starttime="20160816 18:49:41.393"></status>
+</test>
+<doc>A resource file with reusable keywords and variables.
+
+The system specific keywords created here form our own
+domain specific language. They utilize keywords provided
+by the imported Selenium2Library.</doc>
+<status status="PASS" endtime="20160816 18:49:48.078" starttime="20160816 18:49:41.319"></status>
+</suite>
+<status status="PASS" endtime="20160816 18:49:48.080" starttime="20160816 18:49:41.297"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="RFtest01" pass="1">RFtest01</stat>
+<stat fail="0" id="s1-s1" name="SearchingForEleme" pass="1">RFtest01.SearchingForEleme</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
